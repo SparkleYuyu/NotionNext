@@ -26,6 +26,16 @@ const BLOG = {
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXX
 
+  //   ********挂件组件相关********
+  // AI 文章摘要生成 @see https://docs_s.tianli0.top/
+  TianliGPT_CSS:
+    process.env.NEXT_PUBLIC_TIANLI_GPT_CSS ||
+    'https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css',
+  TianliGPT_JS:
+    process.env.NEXT_PUBLIC_TIANLI_GPT_JS ||
+    'https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.js',
+  TianliGPT_KEY: process.env.NEXT_PUBLIC_TIANLI_GPT_KEY || '',
+  
   // RSS订阅
   ENABLE_RSS: process.env.NEXT_PUBLIC_ENABLE_RSS || true, // 是否开启RSS订阅功能
 
